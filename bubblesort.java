@@ -3,7 +3,7 @@ package com.example.array;
 //import java.util.Arrays;
 
 
-public class bubblesort {
+public class bubblesort              {
 
     public static int[] bubbleSortCopy(int[] v){
         int[] copy=new int[v.length];
