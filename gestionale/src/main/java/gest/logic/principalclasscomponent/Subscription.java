@@ -8,9 +8,9 @@ public class Subscription {
 
     private String PlanType;
     private int PlanPrice;
-    private Map<LocalDate,Integer> PaymentDate;
+    private Map<LocalDate,Boolean> PaymentDate;
 
-    public Subscription(String planType, int planPrice, Map<LocalDate, Integer> paymentDate) {
+    public Subscription(String planType, int planPrice, Map<LocalDate, Boolean> paymentDate) {
         PlanType = planType;
         PlanPrice = planPrice;
         PaymentDate = paymentDate;
@@ -32,11 +32,11 @@ public class Subscription {
         PlanPrice = planPrice;
     }
 
-    public Map<LocalDate, Integer> getPaymentDate() {
+    public Map<LocalDate, Boolean> getPaymentDate() {
         return PaymentDate;
     }
 
-    public void setPaymentDate(Map<LocalDate, Integer> paymentDate) {
+    public void setPaymentDate(Map<LocalDate, Boolean> paymentDate) {
         PaymentDate = paymentDate;
     }
 

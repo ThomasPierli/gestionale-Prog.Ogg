@@ -5,12 +5,12 @@ import java.util.ArrayList;
 
 public class Lessons {
     private int PendingLessons;
-    private int MissedLessons;
+    private int ToDoLessons;
     private ArrayList<LocalDate> LessonHistory;
     
     public Lessons(int pendingLessons, int missedLessons, ArrayList<LocalDate> lessonHistory) {
         PendingLessons = pendingLessons;
-        MissedLessons = missedLessons;
+        ToDoLessons = missedLessons;
         LessonHistory = lessonHistory;
     }
 
@@ -23,11 +23,11 @@ public class Lessons {
     }
 
     public int getMissedLessons() {
-        return MissedLessons;
+        return ToDoLessons;
     }
 
     public void setMissedLessons(int missedLessons) {
-        MissedLessons = missedLessons;
+        ToDoLessons = missedLessons;
     }
 
     public ArrayList<LocalDate> getLessonHistory() {
