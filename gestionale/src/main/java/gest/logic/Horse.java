@@ -9,12 +9,11 @@ public class Horse {
     private String Name;
     private LocalDate DateofBirth;
     private String Breed;
-    private String Sex;
+    private String Gender;
     private String CoatColor;
     private Double Height;
     private Person Owner;
     private String Description;
     private Health Health;
 
-    //manca la parte medica
 }
