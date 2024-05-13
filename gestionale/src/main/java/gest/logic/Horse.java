@@ -13,7 +13,7 @@ public class Horse {
     private Double Height;
     private Person Owner;
     private String Description;
-    //manca la parte medica
+    ////manca la parte medica
     
     
     
