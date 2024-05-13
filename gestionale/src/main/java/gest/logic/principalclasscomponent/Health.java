@@ -1,6 +1,7 @@
 package gest.logic.principalclasscomponent;
 
+import gest.logic.Doctor;
+
 public class Health {
-    private class health;
-    
+    private HorseVisit horseDoctorVisitNum;
 }
