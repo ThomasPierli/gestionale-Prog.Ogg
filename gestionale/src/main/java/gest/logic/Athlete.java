@@ -1,6 +1,6 @@
 package gest.logic;
 
-
+import java.time.LocalDate;
 
 import gest.logic.principalclasscomponent.Lessons;
 import gest.logic.principalclasscomponent.Medicalcertificate;
@@ -8,14 +8,12 @@ import gest.logic.principalclasscomponent.Person;
 import gest.logic.principalclasscomponent.Subscription;
 
 import java.awt.image.BufferedImage;
-import java.time.LocalDate;
 
-import com.google.firebase.*;
 
 public class Athlete {
     private String FirstName;
     private String LastName;
-    private String PhomeNumber; 
+    private String PhoneNumber; 
     private LocalDate DateofBirth;
     private String Email;
     private Person Parent1;
@@ -25,13 +23,12 @@ public class Athlete {
     private Medicalcertificate medicalcertificate;
     private BufferedImage Idimage;
 
-
-    public Athlete(String firstName, String lastName, String phomeNumber, LocalDate dateofBirth, String email,
+    public Athlete(String firstName, String lastName, String phoneNumber, LocalDate dateofBirth, String email,
             Person parent1, Person parent2, Lessons lessons, Subscription subscription,
             Medicalcertificate medicalcertificate, BufferedImage idimage) {
         FirstName = firstName;
         LastName = lastName;
-        PhomeNumber = phomeNumber;
+        PhoneNumber = phoneNumber;
         DateofBirth = dateofBirth;
         Email = email;
         Parent1 = parent1;
@@ -58,12 +55,12 @@ public class Athlete {
         LastName = lastName;
     }
 
-    public String getPhomeNumber() {
-        return PhomeNumber;
+    public String getPhoneNumber() {
+        return PhoneNumber;
     }
 
-    public void setPhomeNumber(String phomeNumber) {
-        PhomeNumber = phomeNumber;
+    public void setPhoneNumber(String phoneNumber) {
+        PhoneNumber = phoneNumber;
     }
 
     public LocalDate getDateofBirth() {

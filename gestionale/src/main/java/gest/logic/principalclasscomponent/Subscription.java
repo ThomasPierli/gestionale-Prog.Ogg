@@ -8,7 +8,7 @@ public class Subscription {
 
     private String PlanType;
     private int PlanPrice;
-    private Map<LocalDate,Integer>PaymentDate;
+    private Map<LocalDate,Integer> PaymentDate;
 
     public Subscription(String planType, int planPrice, Map<LocalDate, Integer> paymentDate) {
         PlanType = planType;

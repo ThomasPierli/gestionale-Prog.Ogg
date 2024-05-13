@@ -2,6 +2,7 @@ package gest.logic;
 
 import java.time.LocalDate;
 
+import gest.logic.principalclasscomponent.Health;
 import gest.logic.principalclasscomponent.Person;
 
 public class Horse {
@@ -13,8 +14,7 @@ public class Horse {
     private Double Height;
     private Person Owner;
     private String Description;
-    ////manca la parte medica
-    
-    
-    
+    private Health Health;
+
+    //manca la parte medica
 }

@@ -25,7 +25,7 @@ public class Medicalcertificate {
         Certificate = certificate;
     }
 
-    //nella classe utils mettere destione date(non sono sicuro) e gestione immagine(sicuramente);
+    //nella classe utils mettere gestione date(non sono sicuro) e gestione immagine(sicuramente);
      
     
     
