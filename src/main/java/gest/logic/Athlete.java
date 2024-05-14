@@ -23,6 +23,7 @@ public class Athlete extends Person {
     private Subscription subscription;
     private Medicalcertificate medicalcertificate;
     private BufferedImage Idimage;
+    kk;
 
     
 
