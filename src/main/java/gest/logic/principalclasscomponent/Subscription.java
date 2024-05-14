@@ -7,10 +7,14 @@ import java.util.Map;
 public class Subscription {
 
     private String PlanType;
-    private int PlanPrice;
-    private Map<LocalDate,Boolean> PaymentDate;
+    private Double PlanPrice;
+    private Map<LocalDate,Double> PaymentDate;
+    //ho cambiato nella mappa da boolean a double perche altrimenti se ci fossero dei cambiamenti
+    //di abbonamento nel tempo non si saprebbe quanto ha pagato ecc
+    //magari al posto del bolean di conferma consideriamo gia l'inserimento come conferma.
+    //(double perche magari non sono cifre intere ma con la virgola)
 
-    public Subscription(String planType, int planPrice, Map<LocalDate, Boolean> paymentDate) {
+    public Subscription(String planType, Double planPrice, Map<LocalDate, Double> paymentDate) {
         PlanType = planType;
         PlanPrice = planPrice;
         PaymentDate = paymentDate;
@@ -24,19 +28,19 @@ public class Subscription {
         PlanType = planType;
     }
 
-    public int getPlanPrice() {
+    public Double getPlanPrice() {
         return PlanPrice;
     }
 
-    public void setPlanPrice(int planPrice) {
-        PlanPrice = planPrice;
+    public void setPlanPrice(Double planPrice) {
+        PlanPrice =  planPrice;
     }
 
-    public Map<LocalDate, Boolean> getPaymentDate() {
+    public Map<LocalDate, Double> getPaymentDate() {
         return PaymentDate;
     }
 
-    public void setPaymentDate(Map<LocalDate, Boolean> paymentDate) {
+    public void setPaymentDate(Map<LocalDate, Double> paymentDate) {
         PaymentDate = paymentDate;
     }
 

@@ -47,10 +47,5 @@ public class Person {
     }
 
     //direi che in questa classe non servono altre funzioni ecc,
-    // magari riprendiamo la stessa nelle utils solo per controllare la mail e numero
-
-
-
-   
-    
+    // magari riprendiamo la stessa nelle utils solo per controllare la mail e numeroS
 }

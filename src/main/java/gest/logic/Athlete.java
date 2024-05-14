@@ -12,10 +12,6 @@ import java.awt.image.BufferedImage;
 
 public class Athlete extends Person {
     
-    public Athlete(String firstName, String lastName, String email, String phoneNumber) {
-        super(firstName, lastName, email, phoneNumber);
-        
-    }
     private LocalDate DateofBirth;
     private Person Parent1;
     private Person Parent2;
@@ -23,9 +19,78 @@ public class Athlete extends Person {
     private Subscription subscription;
     private Medicalcertificate medicalcertificate;
     private BufferedImage Idimage;
-    kk;
 
-    
+
+    public Athlete(String firstName, String lastName, String email, String phoneNumber, LocalDate dateofBirth,
+            Person parent1, Person parent2, Lessons lessons, Subscription subscription,
+            Medicalcertificate medicalcertificate, BufferedImage idimage) {
+        
+            super(firstName, lastName, email, phoneNumber);
+            DateofBirth = dateofBirth;
+            Parent1 = parent1;
+            Parent2 = parent2;
+            this.lessons = lessons;
+            this.subscription = subscription;
+            this.medicalcertificate = medicalcertificate;
+            Idimage = idimage;
+    }
+
+
+    public LocalDate getDateofBirth() {
+        return DateofBirth;
+    }
+
+    public void setDateofBirth(LocalDate dateofBirth) {
+        DateofBirth = dateofBirth;
+    }
+
+    public Person getParent1() {
+        return Parent1;
+    }
+
+    public void setParent1(Person parent1) {
+        Parent1 = parent1;
+    }
+
+    public Person getParent2() {
+        return Parent2;
+    }
+
+    public void setParent2(Person parent2) {
+        Parent2 = parent2;
+    }
+
+    public Lessons getLessons() {
+        return lessons;
+    }
+
+    public void setLessons(Lessons lessons) {
+        this.lessons = lessons;
+    }
+
+    public Subscription getSubscription() {
+        return subscription;
+    }
+
+    public void setSubscription(Subscription subscription) {
+        this.subscription = subscription;
+    }
+
+    public Medicalcertificate getMedicalcertificate() {
+        return medicalcertificate;
+    }
+
+    public void setMedicalcertificate(Medicalcertificate medicalcertificate) {
+        this.medicalcertificate = medicalcertificate;
+    }
+
+    public BufferedImage getIdimage() {
+        return Idimage;
+    }
+
+    public void setIdimage(BufferedImage idimage) {
+        Idimage = idimage;
+    }
 
     //ci sono diverse funzioni di modifica e controllo da implementare che pero sono comuni a piu classi 
     //facciamo una classe util con dentro tutte queste funzioni? cosi evitiamo di scrivere lo stesso codice piu volte
