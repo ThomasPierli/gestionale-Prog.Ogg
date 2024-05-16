@@ -2,6 +2,7 @@ package gest.logic;
 
 import java.time.LocalDate;
 import java.util.Map;
+import java.awt.image.BufferedImage;
 
 import gest.logic.principalclasscomponent.Person;
 import gest.logic.principalclasscomponent.Visit.HorseVisitDetails;
@@ -15,10 +16,11 @@ public class Horse {
     private Double Height;
     private Person Owner;
     private String Description;
+    private BufferedImage ImageHorse;
     private Map<String,HorseVisitDetails> HealtList;
     
     public Horse(String name, LocalDate dateofBirth, String breed, String gender, String coatColor, Double height,
-            Person owner, String description, Map<String, HorseVisitDetails> healtList) {
+            Person owner, String description, BufferedImage imageHorse, Map<String, HorseVisitDetails> healtList) {
         Name = name;
         DateofBirth = dateofBirth;
         Breed = breed;
@@ -27,6 +29,7 @@ public class Horse {
         Height = height;
         Owner = owner;
         Description = description;
+        ImageHorse=imageHorse;
         HealtList = healtList;
     }
 
@@ -92,6 +95,14 @@ public class Horse {
 
     public void setDescription(String description) {
         Description = description;
+    }
+
+    public BufferedImage getImageHorse() {
+        return ImageHorse;
+    }
+
+    public void setImageHorse(BufferedImage imageHorse) {
+        ImageHorse = imageHorse;
     }
 
     public Map<String, HorseVisitDetails> getHealtList() {
