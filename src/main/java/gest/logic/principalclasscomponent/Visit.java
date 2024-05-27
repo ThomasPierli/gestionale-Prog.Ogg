@@ -7,14 +7,18 @@ public class Visit {
     /**
      * innervisit
      */
-    public class HorseVisitDetails {
+    public static class HorseVisitDetails {
         private LocalDate Data;
         private String info;
-        private Map<LocalDate,String> memo;//data in cui ricordare, informazioni su cosa ricordare;
-        public HorseVisitDetails(LocalDate data, String info, Map<LocalDate, String> memo) {
+        private String DoctorName;
+        private LocalDate DataMemo;
+        private String InfoMemo;
+        public HorseVisitDetails(LocalDate data, String info, String doctorName, LocalDate dataMemo, String infoMemo) {
             Data = data;
             this.info = info;
-            this.memo = memo;
+            DoctorName = doctorName;
+            DataMemo = dataMemo;
+            InfoMemo = infoMemo;
         }
         public LocalDate getData() {
             return Data;
@@ -28,11 +32,23 @@ public class Visit {
         public void setInfo(String info) {
             this.info = info;
         }
-        public Map<LocalDate, String> getMemo() {
-            return memo;
+        public String getDoctorName() {
+            return DoctorName;
         }
-        public void setMemo(Map<LocalDate, String> memo) {
-            this.memo = memo;
+        public void setDoctorName(String doctorName) {
+            DoctorName = doctorName;
+        }
+        public LocalDate getDataMemo() {
+            return DataMemo;
+        }
+        public void setDataMemo(LocalDate dataMemo) {
+            DataMemo = dataMemo;
+        }
+        public String getInfoMemo() {
+            return InfoMemo;
+        }
+        public void setInfoMemo(String infoMemo) {
+            InfoMemo = infoMemo;
         }
     }
 

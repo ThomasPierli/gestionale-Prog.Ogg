@@ -1,7 +1,7 @@
 package gest.logic.principalclasscomponent;
 
-import java.time.LocalDate;
 import java.awt.image.BufferedImage;
+import java.time.LocalDate;
 
 public class Medicalcertificate {
     private LocalDate ExpiryDate;
@@ -23,5 +23,5 @@ public class Medicalcertificate {
         this.certificateImage = certificateImage;
     }
      //nella classe utils mettere gestione date(non sono sicuro) e gestione immagine(sicuramente);
-    
+     
 }
