@@ -104,22 +104,24 @@
                                     <Font name="System Bold" size="28.0" />
                                  </font>
                               </Label>
-                              <TextField layoutX="158.0" layoutY="275.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Username" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <TextField layoutX="158.0" layoutY="225.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Email" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <TextField layoutX="158.0" layoutY="175.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="269.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Username" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="221.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Email" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="173.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
                               <TextField layoutX="158.0" layoutY="125.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci nome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <PasswordField layoutX="158.0" layoutY="325.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Password" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <Button layoutX="207.0" layoutY="380.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Registrati">
+                              <PasswordField layoutX="158.0" layoutY="317.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Password" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <Button layoutX="204.0" layoutY="414.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Registrati">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="138.0" layoutY="436.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="223.0" text="Hai già un account?          Accedi" />
+                              <Button layoutX="138.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="223.0" text="Hai già un account?          Accedi" />
                               <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="150.0" size="2em" />
-                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="200.0" size="2em" />
-                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="250.0" size="2em" />
-                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="300.0" size="2em" />
-                              <FontAwesomeIcon glyphName="KEY" layoutX="130.0" layoutY="350.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="198.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="246.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="294.0" size="2em" />
+                              <FontAwesomeIcon glyphName="KEY" layoutX="130.0" layoutY="342.0" size="2em" />
+                              <TextField layoutX="158.0" layoutY="365.0" prefHeight="33.0" prefWidth="196.0" promptText="Codice maneggio" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <FontAwesomeIcon glyphName="CODE" layoutX="129.0" layoutY="390.0" size="2em" />
                            </children>
                         </AnchorPane>
                      </children>
