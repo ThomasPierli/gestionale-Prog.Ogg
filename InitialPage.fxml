@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="833.0">
+         <children>
+            <SplitPane dividerPositions="0.39951865222623345" layoutX="-1.0" prefHeight="575.0" prefWidth="839.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="235.0" text="Nome Programma">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="44.0" layoutY="286.0" text="Frase descrittiva del programma">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon glyphName="BAR_CHART" layoutX="110.0" layoutY="220.0" size="8em">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.17790570855140686" green="0.43421053886413574" blue="0.25479716062545776" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.30263158679008484" green="0.7105262875556946" blue="0.30263158679008484" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill></FontAwesomeIcon>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="352.0">
+                     <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="1.0" visible="false">
+                           <children>
+                              <Label layoutX="184.0" layoutY="99.0" text="Benvenuto!">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField layoutX="139.0" layoutY="280.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField layoutX="139.0" layoutY="190.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="140.0" layoutY="163.0" text="Username">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="139.0" layoutY="253.0" text="Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="281.0" layoutY="368.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Accedi">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="SIGN_IN" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <CheckBox layoutX="139.0" layoutY="375.0" mnemonicParsing="false" text="Rimani Connesso" />
+                              <Button layoutX="137.0" layoutY="436.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="223.0" text="Non sei ancora registrato?     Registrati" />
+                              <Label layoutX="137.0" layoutY="327.0" text="Username o Password errati!" textFill="#c31717">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="573.0" prefWidth="498.0">
+                           <children>
+                              <Label layoutX="122.0" layoutY="62.0" text="Crea il tuo account:" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="121.0">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="158.0" layoutY="275.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Username" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="225.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Email" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="175.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField layoutX="158.0" layoutY="125.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci nome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <PasswordField layoutX="158.0" layoutY="325.0" prefHeight="33.0" prefWidth="196.0" promptText="Inserisci Password" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <Button layoutX="207.0" layoutY="380.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Registrati">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="138.0" layoutY="436.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="223.0" text="Hai già un account?          Accedi" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="150.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="200.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="250.0" size="2em" />
+                              <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="300.0" size="2em" />
+                              <FontAwesomeIcon glyphName="KEY" layoutX="130.0" layoutY="350.0" size="2em" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

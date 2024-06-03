@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="585.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.24646226415094338" prefHeight="585.0" prefWidth="850.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="661.0" />
+      <BorderPane prefHeight="585.0" prefWidth="850.0">
+         <top>
+            <AnchorPane prefHeight="45.0" prefWidth="701.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="228.0" layoutY="-77.0" prefHeight="35.0" prefWidth="1100.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #228b22;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FontAwesomeIcon glyphName="GRADUATION_CAP" layoutX="14.0" layoutY="25.0" size="1.5em">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.19264133274555206" green="0.3881579041481018" blue="0.02156432718038559" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5344176292419434" green="0.8157894611358643" blue="0.5391071438789368" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </FontAwesomeIcon>
+                        <Label layoutX="45.0" layoutY="10.0" text="Gestionale Maneggio" />
+                        <Button layoutX="802.0" layoutY="7.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="40.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                           </graphic>
+                        </Button>
+                        <Button layoutX="764.0" layoutY="7.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="40.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="MINUS" size="1.2em" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="355.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="-9.0" prefHeight="549.0" prefWidth="206.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-46.0" AnchorPane.topAnchor="-9.0">
+                     <children>
+                        <FontAwesomeIcon glyphName="USER" layoutX="70.0" layoutY="86.0" size="7em" text="" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.19264133274555206" green="0.3881579041481018" blue="0.02156432718038559" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5344176292419434" green="0.8157894611358643" blue="0.5391071438789368" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </FontAwesomeIcon>
+                        <Label layoutX="59.0" layoutY="98.0" prefHeight="26.0" prefWidth="91.0" text="Bentornato!" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="57.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="120.0" prefHeight="30.0" prefWidth="57.0" text="User1" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="74.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.3664302600472813">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.26086997985839844" green="0.4868420958518982" blue="0.2310246080160141" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.17225609756097562">
+                                       <color>
+                                          <Color red="0.26393914222717285" green="0.7799999713897705" blue="0.12479999661445618" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.40243902439024387">
+                                       <color>
+                                          <Color red="0.27816087007522583" green="0.38999998569488525" blue="0.17550000548362732" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5114482730397775">
+                                       <color>
+                                          <Color red="0.1728801131248474" green="0.5789473652839661" blue="0.21348683536052704" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.7897773776395481">
+                                       <color>
+                                          <Color red="0.1838526427745819" green="0.3618420958518982" blue="0.15244273841381073" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Line endX="61.5" fill="BLACK" layoutX="123.0" layoutY="158.0" startX="-100.0" stroke="#306b12" AnchorPane.leftAnchor="22.5" AnchorPane.rightAnchor="22.0" />
+                        <Button layoutX="42.0" layoutY="177.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Home" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="HOME" size="1.5em" text="">
+                                 <selectionFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </selectionFill>
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.19264133274555206" green="0.3881579041481018" blue="0.02156432718038559" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.5344176292419434" green="0.8157894611358643" blue="0.5391071438789368" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="35.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" text="Tesserati" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="USERS">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.19264133274555206" green="0.3881579041481018" blue="0.02156432718038559" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.5344176292419434" green="0.8157894611358643" blue="0.5391071438789368" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="41.0" layoutY="274.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="125.0" text="Cavalli" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon>
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3664302600472813">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.26086997985839844" green="0.4868420958518982" blue="0.2310246080160141" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.17225609756097562">
+                                             <color>
+                                                <Color red="0.26393914222717285" green="0.7799999713897705" blue="0.12479999661445618" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.40243902439024387">
+                                             <color>
+                                                <Color red="0.27816087007522583" green="0.38999998569488525" blue="0.17550000548362732" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5114482730397775">
+                                             <color>
+                                                <Color red="0.1728801131248474" green="0.5789473652839661" blue="0.21348683536052704" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.7897773776395481">
+                                             <color>
+                                                <Color red="0.1838526427745819" green="0.3618420958518982" blue="0.15244273841381073" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="30.0" layoutY="324.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="152.0" text="Fornitori e veterinari" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="animal">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3664302600472813">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.26086997985839844" green="0.4868420958518982" blue="0.2310246080160141" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.17225609756097562">
+                                             <color>
+                                                <Color red="0.26393914222717285" green="0.7799999713897705" blue="0.12479999661445618" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.40243902439024387">
+                                             <color>
+                                                <Color red="0.27816087007522583" green="0.38999998569488525" blue="0.17550000548362732" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5114482730397775">
+                                             <color>
+                                                <Color red="0.1728801131248474" green="0.5789473652839661" blue="0.21348683536052704" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.7897773776395481">
+                                             <color>
+                                                <Color red="0.1838526427745819" green="0.3618420958518982" blue="0.15244273841381073" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="33.0" layoutY="423.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Calendario" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CALENDAR">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3664302600472813">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.26086997985839844" green="0.4868420958518982" blue="0.2310246080160141" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.17225609756097562">
+                                             <color>
+                                                <Color red="0.26393914222717285" green="0.7799999713897705" blue="0.12479999661445618" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.40243902439024387">
+                                             <color>
+                                                <Color red="0.27816087007522583" green="0.38999998569488525" blue="0.17550000548362732" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5114482730397775">
+                                             <color>
+                                                <Color red="0.1728801131248474" green="0.5789473652839661" blue="0.21348683536052704" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.7897773776395481">
+                                             <color>
+                                                <Color red="0.1838526427745819" green="0.3618420958518982" blue="0.15244273841381073" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="27.0" layoutY="372.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="142.0" text="Bilancio e statistiche" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="BAR_CHART">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3664302600472813">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.26086997985839844" green="0.4868420958518982" blue="0.2310246080160141" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.17225609756097562">
+                                             <color>
+                                                <Color red="0.26393914222717285" green="0.7799999713897705" blue="0.12479999661445618" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.40243902439024387">
+                                             <color>
+                                                <Color red="0.27816087007522583" green="0.38999998569488525" blue="0.17550000548362732" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5114482730397775">
+                                             <color>
+                                                <Color red="0.1728801131248474" green="0.5789473652839661" blue="0.21348683536052704" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.7897773776395481">
+                                             <color>
+                                                <Color red="0.1838526427745819" green="0.3618420958518982" blue="0.15244273841381073" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="30.0" layoutY="491.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="27.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="SIGN_OUT" size="1.5em" wrappingWidth="15.285715103149414">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.19264133274555206" green="0.3881579041481018" blue="0.02156432718038559" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.5344176292419434" green="0.8157894611358643" blue="0.5391071438789368" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </Button>
+                        <Label layoutX="64.0" layoutY="498.0" text="Esci">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>
