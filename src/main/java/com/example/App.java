@@ -17,7 +17,7 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
         
         scene = new Scene(loadFXML("MainPage"));
         Image icon = new Image(getClass().getResourceAsStream("sfondoFoglie.jpg"));
@@ -28,7 +28,8 @@ public class App extends Application {
         stage.show();
     }
 
-    private static Parent loadFXML(String fxml) throws IOException {
+     @SuppressWarnings("exports")
+    public static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }

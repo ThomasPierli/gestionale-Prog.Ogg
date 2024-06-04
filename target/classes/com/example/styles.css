@@ -1,0 +1,5 @@
+/* Stile per il bottone specifico di JavaFX */
+/* Stile per il bottone specifico di JavaFX */
+.anotherButton {
+    background-clip: border-box;
+}

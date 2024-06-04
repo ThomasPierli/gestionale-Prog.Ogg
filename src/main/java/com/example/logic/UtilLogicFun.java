@@ -23,7 +23,7 @@ public class UtilLogicFun {
             if (key.next()) {
                 return key.getInt(1);
             } else {
-                throw new SQLException("non sono riuscito a recuperare l'id_doctor");
+                throw new SQLException("non sono riuscito a recuperare l'id");
             }
     }
 
