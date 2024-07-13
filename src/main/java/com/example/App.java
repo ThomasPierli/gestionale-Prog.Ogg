@@ -19,10 +19,10 @@ public class App extends Application {
     @Override
     public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
         
-        scene = new Scene(loadFXML("initialPage"));
+        scene = new Scene(loadFXML("initialPages"));
         Image icon = new Image(getClass().getResourceAsStream("sfondoFoglie.jpg"));
         stage.getIcons().add(icon);
-        stage.getIcons().add(new Image("src/main/resources/com/example/sfondoFoglie.jpg"));
+        //stage.getIcons().add(new Image("src\\main\\resources\\com\\example\\sfondoFoglie.jpg"));
 
     
         stage.setResizable(false);

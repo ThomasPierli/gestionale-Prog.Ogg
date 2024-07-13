@@ -42,7 +42,6 @@ public class insertobjectindb {
             prepuser.setString(4, UserSession.GetInstance().getFirstName());
             prepuser.setString(5, UserSession.GetInstance().getLastName());
             prepuser.setInt(6, UserSession.GetInstance().getId_ridingschool());
-            System.err.println(prepuser);
             prepuser.executeUpdate();
             UserSession.GetInstance().setId(UtilLogicFun.getid(prepuser));
             label.setText("credenziali inserite correttamente!");
@@ -57,7 +56,31 @@ public class insertobjectindb {
             }
         }
         return ris;
-        
+    }
+
+    public static boolean InsertQuestionPassword(String question, String answer){
+        String sqlquestion="INSERT INTO QuestionPassword (Question, Answer, ID_User) VALUES (?, ?, ?)";
+        PreparedStatement prep=null;
+        Connection conn=null;
+        Boolean ris=false;
+        try {
+            conn = ControlDB.connection();
+            prep = conn.prepareStatement(sqlquestion);
+            prep.setString(1, question);
+            prep.setString(2, answer);
+            prep.setInt(3, UserSession.GetInstance().getId());
+            prep.executeUpdate();
+            ris=true;
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }finally {
+            AutoCloseable[] clos = { conn, prep};
+            for (AutoCloseable i : clos) {
+                UtilLogicFun.resclose(i);
+            }
+        }
+        return ris;
 
     }
 
@@ -278,7 +301,7 @@ public class insertobjectindb {
                 prephorsevisit.setString(3, visit.getHorseVisit().get(key).getDataMemo().toString());
                 prephorsevisit.setString(4, visit.getHorseVisit().get(key).getInfoMemo());
                 prephorsevisit.setInt(5,UtilLogicFun.getid(prepVisit));
-                prephorsevisit.setInt(6,getobjectdb.getIdtabByobb("Horse","Name",key)); 
+                prephorsevisit.setInt(6,getobjectdb.getobbytabByobb("ID_Horse","Horse","Name",key)); 
                 prephorsevisit.setString(7, doctorname);                
             }
             conn.commit();

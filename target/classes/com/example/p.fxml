@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.loginsignupcontroller">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="833.0">
+         <children>
+            <SplitPane fx:id="prova" dividerPositions="0.39" layoutX="-1.0" prefHeight="575.0" prefWidth="839.0" stylesheets="@styles.css">
+              <items>
+                <AnchorPane fx:id="initialdescriptivepane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="235.0" text="Nome Programma">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="44.0" layoutY="286.0" text="Frase descrittiva del programma">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Rectangle fill="black" height="64.0" layoutX="133.0" layoutY="171.0" width="64.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="loginsignuppane" layoutX="100.0" layoutY="200.0" prefHeight="200.0" prefWidth="352.0">
+                     <children>
+                      <AnchorPane fx:id="loginpane" minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="1.0" visible="false">
+                           <children>
+                              <Label fx:id="Errorlabel" layoutX="139.0" layoutY="371.0" prefHeight="19.0" prefWidth="224.0" />
+                              <Label layoutX="184.0" layoutY="99.0" text="Benvenuto!">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="Password" focusTraversable="false" layoutX="139.0" layoutY="280.0" promptText="Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField fx:id="userormail" focusTraversable="false" layoutX="139.0" layoutY="190.0" promptText="Username o mail">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="140.0" layoutY="163.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="139.0" layoutY="253.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="rememberme" focusTraversable="false" layoutX="139.0" layoutY="390.0" mnemonicParsing="false" text="Ricordami" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="-233.0" AnchorPane.topAnchor="330.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </CheckBox>
+                              <Button fx:id="gotosignup" focusTraversable="false" layoutX="287.0" layoutY="490.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="73.0" text="SignUp">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <TextField fx:id="PasswordText" focusTraversable="false" layoutX="139.0" layoutY="280.0" prefHeight="40.0" prefWidth="223.0" visible="false" />
+                              <Button fx:id="ViewPassword" focusTraversable="false" layoutX="335.0" layoutY="287.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="24.0" />
+                              <Button fx:id="loginButton" focusTraversable="false" layoutX="135.0" layoutY="459.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" styleClass="loginButton" text="Accedi" AnchorPane.bottomAnchor="88.0" AnchorPane.topAnchor="454.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="forgotpassword" layoutX="230.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: trasparent;" text="Password dimenticata?">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="132.0" layoutY="497.0" prefHeight="21.0" prefWidth="170.0" text="Non sei ancora registrato?">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="signuppane" layoutX="10.0" prefHeight="595.0" prefWidth="522.0" visible="false">
+                           <children>
+                              <Label layoutX="122.0" layoutY="62.0" text="Crea il tuo account:" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="121.0">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Username" focusTraversable="false" layoutX="158.0" layoutY="269.0" prefHeight="33.0" prefWidth="196.0" promptText="Username" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField fx:id="Email" focusTraversable="false" layoutX="158.0" layoutY="221.0" prefHeight="33.0" prefWidth="196.0" promptText="Email" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField fx:id="Lastname" focusTraversable="false" layoutX="158.0" layoutY="173.0" prefHeight="33.0" prefWidth="196.0" promptText="cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField fx:id="Firstname" focusTraversable="false" layoutX="158.0" layoutY="125.0" prefHeight="33.0" prefWidth="196.0" promptText="nome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <PasswordField fx:id="Passwordsignup" focusTraversable="false" layoutX="158.0" layoutY="317.0" maxHeight="33.0" prefHeight="33.0" prefWidth="215.0" promptText="Password" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="317.0" />
+                              <Button fx:id="signupButton" focusTraversable="false" layoutX="210.0" layoutY="442.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Registrati">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="gotologin" focusTraversable="false" layoutX="141.0" layoutY="479.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="223.0" text="Hai già un account? " />
+                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="130.0" width="20.0" />
+                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="178.0" width="20.0" />
+                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="226.0" width="20.0" />
+                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="274.0" width="20.0" />
+                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="322.0" width="20.0" />
+                              <TextField fx:id="idridingschool" focusTraversable="false" layoutX="158.0" layoutY="365.0" prefHeight="33.0" prefWidth="196.0" promptText="Codice maneggio" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <Rectangle fill="black" height="20.0" layoutX="129.0" layoutY="370.0" width="20.0" />
+                              <TextField fx:id="PasswordTextsignup" focusTraversable="false" layoutX="158.0" layoutY="317.0" prefHeight="33.0" prefWidth="215.0" visible="false" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="317.0" />
+                              <Button fx:id="ViewPasswordsignup" focusTraversable="false" layoutX="328.0" layoutY="320.0" mnemonicParsing="false" AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="322.0" />
+                              <Label fx:id="Errorlabelsignup" layoutX="161.0" layoutY="402.0" text="" textFill="RED">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="infobutton" focusTraversable="false" layoutX="48.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="26.0" text="?" />
+                              <TextArea fx:id="textinfo" focusTraversable="false" layoutX="72.0" layoutY="70.0" opacity="0.92" prefHeight="110.0" prefWidth="135.0" text="pdpdpdp&#10;pinuzzo" visible="false">
+                                 <cursor>
+                                    <Cursor fx:constant="DISAPPEAR" />
+                                 </cursor>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
