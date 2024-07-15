@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.loginsignupcontroller">
+<BorderPane stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.loginsignupcontroller">
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="833.0">
          <children>
@@ -40,7 +33,11 @@
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <Rectangle fill="black" height="64.0" layoutX="133.0" layoutY="171.0" width="64.0" />
+                        <ImageView fitHeight="138.0" fitWidth="138.0" layoutX="84.0" layoutY="54.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/sfondo%20foglie.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane fx:id="loginsignuppane" layoutX="100.0" layoutY="200.0" prefHeight="200.0" prefWidth="352.0">
@@ -101,51 +98,47 @@
                               </Label>
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="signuppane" layoutX="10.0" prefHeight="595.0" prefWidth="522.0" visible="false">
+                        <AnchorPane fx:id="signuppane" layoutX="6.0" prefHeight="595.0" prefWidth="522.0" visible="false">
                            <children>
-                              <Label layoutX="122.0" layoutY="62.0" text="Crea il tuo account:" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="121.0">
+                              <Label layoutX="122.0" layoutY="62.0" text="Crea il tuo account:" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="120.0">
                                  <font>
                                     <Font name="System Bold" size="28.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="Username" focusTraversable="false" layoutX="158.0" layoutY="269.0" prefHeight="33.0" prefWidth="196.0" promptText="Username" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
                               <TextField fx:id="Email" focusTraversable="false" layoutX="158.0" layoutY="221.0" prefHeight="33.0" prefWidth="196.0" promptText="Email" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <TextField fx:id="Lastname" focusTraversable="false" layoutX="158.0" layoutY="173.0" prefHeight="33.0" prefWidth="196.0" promptText="cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <TextField fx:id="Firstname" focusTraversable="false" layoutX="158.0" layoutY="125.0" prefHeight="33.0" prefWidth="196.0" promptText="nome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField fx:id="Lastname" focusTraversable="false" layoutX="158.0" layoutY="173.0" prefHeight="33.0" prefWidth="196.0" promptText="Cognome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
+                              <TextField fx:id="Firstname" focusTraversable="false" layoutX="158.0" layoutY="125.0" prefHeight="33.0" prefWidth="196.0" promptText="Nome" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
                               <PasswordField fx:id="Passwordsignup" focusTraversable="false" layoutX="158.0" layoutY="317.0" maxHeight="33.0" prefHeight="33.0" prefWidth="215.0" promptText="Password" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="317.0" />
-                              <Button fx:id="signupButton" focusTraversable="false" layoutX="210.0" layoutY="442.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Registrati">
+                              <Button fx:id="signupButton" focusTraversable="false" layoutX="163.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="197.0" text="Registrati">
                                  <font>
-                                    <Font size="15.0" />
+                                    <Font size="13.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="gotologin" focusTraversable="false" layoutX="141.0" layoutY="479.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="223.0" text="Hai già un account? " />
-                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="130.0" width="20.0" />
-                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="178.0" width="20.0" />
-                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="226.0" width="20.0" />
-                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="274.0" width="20.0" />
-                              <Rectangle fill="black" height="20.0" layoutX="130.0" layoutY="322.0" width="20.0" />
+                              <Button fx:id="gotologin" focusTraversable="false" layoutX="181.0" layoutY="513.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="162.0" text="Ho già un account">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font></Button>
                               <TextField fx:id="idridingschool" focusTraversable="false" layoutX="158.0" layoutY="365.0" prefHeight="33.0" prefWidth="196.0" promptText="Codice maneggio" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" />
-                              <Rectangle fill="black" height="20.0" layoutX="129.0" layoutY="370.0" width="20.0" />
                               <TextField fx:id="PasswordTextsignup" focusTraversable="false" layoutX="158.0" layoutY="317.0" prefHeight="33.0" prefWidth="215.0" visible="false" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="317.0" />
-                              <Button fx:id="ViewPasswordsignup" focusTraversable="false" layoutX="328.0" layoutY="320.0" mnemonicParsing="false" AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="322.0" />
+                              <Button fx:id="ViewPasswordsignup" focusTraversable="false" layoutX="340.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="322.0" />
                               <Label fx:id="Errorlabelsignup" layoutX="161.0" layoutY="402.0" text="" textFill="RED">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="infobutton" focusTraversable="false" layoutX="48.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="26.0" text="?" />
+                              <Button fx:id="infobutton" focusTraversable="false" layoutX="482.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="26.0" text="?" />
                               <TextArea fx:id="textinfo" focusTraversable="false" layoutX="72.0" layoutY="70.0" opacity="0.92" prefHeight="110.0" prefWidth="135.0" text="pdpdpdp&#10;pinuzzo" visible="false">
                                  <cursor>
                                     <Cursor fx:constant="DISAPPEAR" />
                                  </cursor>
                               </TextArea>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane fx:id="loginpane1" layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="1.0">
-                           <children>
-                              <ChoiceBox prefHeight="31.0" prefWidth="248.0" />
-                              <ChoiceBox prefHeight="31.0" prefWidth="249.0" />
-                              <ChoiceBox layoutX="100.0" layoutY="299.0" prefHeight="31.0" prefWidth="248.0" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="129.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="128.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="128.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="127.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="128.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="127.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                      </children>
