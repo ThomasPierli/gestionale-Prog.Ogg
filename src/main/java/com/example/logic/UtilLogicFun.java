@@ -6,11 +6,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.Random;
 
 import javax.imageio.ImageIO;
 
@@ -103,6 +106,20 @@ public class UtilLogicFun {
             prop.setProperty("password", password);
             OutputStream out=new FileOutputStream("src\\main\\resources\\com\\example\\credentials.properties");
             prop.store(out, "commento");
+            return true;
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+        return false;
+    }
+
+    public static boolean GetQUestionRememberPassword(TextField question){
+        Properties prop= new Properties();
+        Random random = new Random();
+        try (InputStreamReader reader = new InputStreamReader(new FileInputStream("src\\main\\resources\\com\\example\\credentials.properties"), StandardCharsets.UTF_8)){
+            prop.load(reader);
+            String string=prop.getProperty("question"+random.nextInt(21));
+            question.setPromptText("?" + string);
             return true;
         } catch (Exception e) {
             System.err.println(e.getMessage());

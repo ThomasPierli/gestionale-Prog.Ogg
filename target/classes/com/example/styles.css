@@ -1,4 +1,7 @@
 /*---------splitpane, anchorpane, pane----------------*/
+
+
+
 .split-pane>.split-pane-divider {
     -fx-padding: 0px;
 }
@@ -63,4 +66,63 @@
     -fx-background-image: url("eye.png");
     -fx-background-size: 86% 86%;
     -fx-background-position: center center;
+}
+
+/* modifiche di emi (boh sto facendo delle prove, vediamo...) */
+
+.white-background{
+    -fx-background-color: #fff;
+}
+
+.radius{
+    -fx-background-radius: 8px;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.main-background{
+    -fx-background-color: linear-gradient(to bottom right, #639c6b, #1a722c);
+}
+
+.button{
+    -fx-background-color: linear-gradient(to bottom right, #0d9642, #639c6b);
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+
+.nav-button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-color: #fff;
+    -fx-border-width: .8px;
+    -fx-text-fill: #fff;
+}
+
+.nav-btn:hover{
+    -fx-background-color: #0abfa4;
+    -fx-border-color: #0abfa4;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #0d9642, #1a722c);
+    -fx-border-radius: 8px;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #0d9642, #1a722c);
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    
+    -fx-text-fill: #fff;
 }

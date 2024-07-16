@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.example.logic.UserSession;
 import com.example.logic.UtilLogicFun;
@@ -109,10 +111,8 @@ public class getobjectdb {
         return ris;
     }
 
-
-
-    public static Integer getIdtabByobb(String tab, String obb,String name) throws SQLException{
-        String sql = "SELECT id FROM "+tab+" WHERE "+obb+" = ?";
+    public static Integer getobbytabByobb(String getob,String tab, String obb,String name) throws SQLException{
+        String sql = "SELECT "+getob+" FROM "+tab+" WHERE "+obb+" = ?";
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -120,19 +120,73 @@ public class getobjectdb {
             conn=ControlDB.connection();
             pstmt=conn.prepareStatement(sql);
             pstmt.setString(1, name); 
+
             rs = pstmt.executeQuery();
+            
             if (rs.next()) {
                 return rs.getInt(1);
             }
         } catch (SQLException e) {
-            e.getMessage();
+           System.err.println(e.getMessage());
         } finally {
             AutoCloseable[] clos={conn,rs,pstmt};
             for (AutoCloseable clo : clos) {
                 UtilLogicFun.resclose(clo);                    
             }
         }
-        throw new SQLException("non sono riuscito a recuperare l'id_doctor");
+        throw new SQLException("non sono riuscito a recuperare l'id");
+    }
+
+    public static Map<String,String> GetQuestionAndAnswerPassword(Integer id, Label errorlLabel){
+        String sql = "SELECT Question, Answer FROM QuestionPassword WHERE id_User=?";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Map<String,String> resultmap=new HashMap<>();
+        try {
+            conn=ControlDB.connection();
+            pstmt=conn.prepareStatement(sql);
+            pstmt.setInt(1, id); 
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                resultmap.put(rs.getString("Question"), rs.getString("Answer"));
+                System.err.println("ho recuperato una domanda e risposta");
+            }
+        } catch (SQLException e) {
+            e.getMessage();
+            errorlLabel.setText("abbiamo avuto problemi nel ritrovare le domande");
+        } finally {
+            AutoCloseable[] clos={conn,rs,pstmt};
+            for (AutoCloseable clo : clos) {
+                UtilLogicFun.resclose(clo);                    
+            }
+        }
+        return resultmap;
+    }
+
+    public static String GetPasswordById(Integer id, Label errorLabel){
+        String sql = "SELECT Password FROM User WHERE ID_User=?";
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            conn=ControlDB.connection();
+            pstmt=conn.prepareStatement(sql);
+            pstmt.setInt(1, id); 
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                return rs.getString(1);
+            }
+        } catch (SQLException e) {
+            e.getMessage();
+            errorLabel.setText("abbiamo avuto problemi nel ritrovare la tua password");
+        } finally {
+            AutoCloseable[] clos={conn,rs,pstmt};
+            for (AutoCloseable clo : clos) {
+                UtilLogicFun.resclose(clo);                    
+            }
+        }
+        return null;
     }
 
 }

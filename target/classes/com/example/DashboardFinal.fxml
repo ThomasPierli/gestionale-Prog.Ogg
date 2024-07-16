@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="120.0" layoutY="100.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="218.0" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="27.0" layoutY="136.0" prefHeight="159.0" prefWidth="219.0" AnchorPane.bottomAnchor="428.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="52.0" layoutY="105.0" text="Bentornato, user!" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="52.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="97.0" fitWidth="109.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button layoutX="19.0" layoutY="189.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="shadow" stylesheets="@styles.css" text="Home" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button layoutX="19.0" layoutY="253.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="Tesserati" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button layoutX="19.0" layoutY="317.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="Fornitori e ordini" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button layoutX="19.0" layoutY="380.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="Cavalli" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button layoutX="19.0" layoutY="444.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="Medici" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button layoutX="38.0" layoutY="512.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" stylesheets="@styles.css" text="Exit" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Line endX="100.0" layoutX="109.0" layoutY="165.0" startX="-100.0" AnchorPane.leftAnchor="8.5" AnchorPane.rightAnchor="8.5" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="white-background" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </AnchorPane>
+               </left>
+               <top>
+                  <AnchorPane prefHeight="37.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-43.0" layoutY="-81.0" prefHeight="119.0" prefWidth="1100.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="32.0" layoutY="10.0" text="Dashboard">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="white-background" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="512.0" prefWidth="836.0" stylesheets="@styles.css">
+                     <children>
+                        <AnchorPane prefHeight="563.0" prefWidth="881.0" stylesheets="@styles.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView prefHeight="563.0" prefWidth="881.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                <columns>
+                                  <TableColumn prefWidth="73.0" text="ID Atleta" />
+                                  <TableColumn prefWidth="71.0" text="Foto " />
+                                    <TableColumn prefWidth="125.0" text="Nome e cognome" />
+                                    <TableColumn prefWidth="62.0" text="Cavallo" />
+                                    <TableColumn prefWidth="66.0" text="Contatti" />
+                                    <TableColumn prefWidth="120.0" text="Certificato medico" />
+                                    <TableColumn prefWidth="111.5" text="Abbonamento" />
+                                    <TableColumn prefWidth="113.0" text="Lezioni" />
+                                    <TableColumn prefWidth="98.5" text="Data di nascita" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="492.0" layoutY="512.0" prefHeight="38.0" prefWidth="178.0" text="Aggiungi nuovo atleta" />
+                              <Button layoutX="683.0" layoutY="512.0" prefHeight="38.0" prefWidth="178.0" text="Aggiungi nuove lezioni" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="white-background" />
+                              <String fx:value="shadow" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="563.0" prefWidth="881.0" stylesheets="@styles.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane stylesheets="@styles.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                 <children>
+                                    <Line endX="-100.0" endY="80.0" layoutX="399.0" layoutY="152.0" startX="-100.0" startY="-140.0" AnchorPane.bottomAnchor="12.5" AnchorPane.topAnchor="11.5" />
+                                    <Label layoutX="13.0" layoutY="19.0" text="Aggiungi memo:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox layoutX="91.0" layoutY="52.0" prefWidth="150.0" />
+                                    <TextArea layoutX="92.0" layoutY="145.0" prefHeight="21.0" prefWidth="170.0" />
+                                    <Label layoutX="49.0" layoutY="56.0" text="Cavallo:" />
+                                    <Label layoutX="53.0" layoutY="155.0" text="Memo:" />
+                                    <DatePicker layoutX="91.0" layoutY="100.0" />
+                                    <Label layoutX="62.0" layoutY="104.0" text="Data:" />
+                                    <Button layoutX="189.0" layoutY="198.0" mnemonicParsing="false" text="Aggiungi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="47.0" layoutY="198.0" mnemonicParsing="false" text="Svuota i campi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="320.0" layoutY="19.0" text="Aggiungi cavallo:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="317.0" layoutY="101.0" text="Data di nascita:" />
+                                    <Label layoutX="362.0" layoutY="56.0" text="Nome:" />
+                                    <TextField layoutX="399.0" layoutY="52.0" prefHeight="26.0" prefWidth="127.0" />
+                                    <DatePicker layoutX="399.0" layoutY="96.0" prefHeight="26.0" prefWidth="137.0" />
+                                    <Label layoutX="333.0" layoutY="144.0" text="Proprietario:" />
+                                    <TextField layoutX="400.0" layoutY="139.0" prefHeight="26.0" prefWidth="127.0" />
+                                    <Label layoutX="686.0" layoutY="100.0" text="Manto:" />
+                                    <TextField layoutX="725.0" layoutY="96.0" prefHeight="26.0" prefWidth="85.0" />
+                                    <Label layoutX="555.0" layoutY="55.0" text="Razza:" />
+                                    <TextField layoutX="589.0" layoutY="52.0" prefHeight="26.0" prefWidth="86.0" />
+                                    <Label layoutX="681.0" layoutY="56.0" text="Altezza:" />
+                                    <TextField layoutX="723.0" layoutY="52.0" prefHeight="26.0" prefWidth="84.0" />
+                                    <Label layoutX="555.0" layoutY="100.0" text="Sesso:" />
+                                    <TextField layoutX="589.0" layoutY="96.0" prefHeight="26.0" prefWidth="88.0" />
+                                    <Button layoutX="595.0" layoutY="140.0" minHeight="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="Importa">
+                                       <font>
+                                          <Font size="8.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="561.0" layoutY="144.0" text="Foto:" />
+                                    <Button layoutX="620.0" layoutY="198.0" mnemonicParsing="false" text="Crea">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="478.0" layoutY="198.0" mnemonicParsing="false" text="Svuota i campi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-background" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="20.0" layoutY="5.0" prefHeight="273.0" prefWidth="836.0" stylesheets="@styles.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                 <styleClass>
+                                    <String fx:value="white-background" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView layoutX="25.0" layoutY="7.0" prefHeight="253.0" prefWidth="820.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                      <columns>
+                                        <TableColumn fx:id="data_ordine" prefWidth="118.5" text="Nome" />
+                                        <TableColumn fx:id="tipo_ordine" prefWidth="130.5" text="Foto" />
+                                          <TableColumn fx:id="descrizione_ordine" prefWidth="125.0" text="Data di nascita" />
+                                          <TableColumn fx:id="costo_ordine" prefWidth="157.5" text="Proprietario" />
+                                          <TableColumn fx:id="costo_ordine1" prefWidth="109.5" text="Razza" />
+                                          <TableColumn fx:id="costo_ordine11" prefWidth="42.0" text="Sesso" />
+                                          <TableColumn fx:id="costo_ordine111" prefWidth="65.5" text="Altezza" />
+                                          <TableColumn fx:id="costo_ordine1111" prefWidth="82.5" text="Manto" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="205.0" layoutY="66.0" prefHeight="563.0" prefWidth="881.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="210.0" layoutY="164.0" prefHeight="563.0" prefWidth="881.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="15.0">
+                                 <styleClass>
+                                    <String fx:value="white-background" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                                 <children>
+                                    <Line endX="177.0" layoutX="120.5" layoutY="291.0" startX="-100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                                    <Label layoutX="14.0" layoutY="298.0" text="Crea nuovo fornitore:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="27.0" layoutY="337.0" text="Nome e cognome:" />
+                                    <TextField layoutX="128.0" layoutY="333.0" prefHeight="26.0" prefWidth="142.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="59.0" />
+                                    <Label layoutX="94.0" layoutY="376.0" text="Email:" />
+                                    <TextField layoutX="128.0" layoutY="371.0" prefHeight="26.0" prefWidth="127.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="59.0" />
+                                    <Label layoutX="76.0" layoutY="413.0" text="Telefono:" />
+                                    <TextField layoutX="128.0" layoutY="408.0" prefHeight="26.0" prefWidth="133.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="59.0" />
+                                    <Label layoutX="99.0" layoutY="450.0" text="Tipo:" />
+                                    <TextField layoutX="128.0" layoutY="445.0" prefHeight="26.0" prefWidth="135.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="59.0" />
+                                    <Button layoutX="56.0" layoutY="489.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" text="Crea">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="152.0" layoutY="489.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="111.0" text="Svuota i campi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="120.0" layoutY="153.0" text="Descrizione:" />
+                                    <TextArea layoutX="48.0" layoutY="170.0" prefHeight="67.0" prefWidth="213.0" />
+                                    <Label layoutX="60.0" layoutY="49.0" text="Data:" />
+                                    <Label layoutX="19.0" layoutY="13.0" text="Inserisci nuovo ordine:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="89.0" layoutY="118.0" prefHeight="26.0" prefWidth="143.0" />
+                                    <Label layoutX="54.0" layoutY="122.0" text="Costo:" />
+                                    <Label layoutX="60.0" layoutY="87.0" text="Tipo:" />
+                                    <ChoiceBox layoutX="88.0" layoutY="81.0" prefHeight="26.0" prefWidth="143.0" />
+                                    <DatePicker layoutX="88.0" layoutY="44.0" prefHeight="26.0" prefWidth="143.0" />
+                                    <Button layoutX="178.0" layoutY="251.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" text="Aggiungi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="52.0" layoutY="251.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" text="Svuota i campi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="563.0" prefWidth="881.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                 <styleClass>
+                                    <String fx:value="white-background" />
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView layoutX="166.0" layoutY="135.0" prefHeight="533.0" prefWidth="518.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                      <columns>
+                                        <TableColumn prefWidth="83.0" text="Data" />
+                                        <TableColumn prefWidth="93.0" text="Tipo" />
+                                          <TableColumn prefWidth="241.5" text="Descrizione" />
+                                          <TableColumn prefWidth="69.5" text="Costo" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.3294117748737335" green="0.5254902243614197" blue="0.3137255012989044" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="white-bg" />
+      <String fx:value="shadow" />
+   </styleClass>
+</StackPane>

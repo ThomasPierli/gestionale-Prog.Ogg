@@ -6,9 +6,13 @@ module com.example {
     requires java.sql;
     requires sqlite.jdbc;
     requires java.sql.rowset;
+    requires java.base;
 
     opens com.example to javafx.fxml;
+
     exports com.example;
+
     opens com.example.javafx to javafx.fxml;
+
     exports com.example.javafx;
 }

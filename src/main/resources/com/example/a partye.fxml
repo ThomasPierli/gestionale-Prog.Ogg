@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="23.0" layoutY="24.0" text="Aggiungi memo:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="101.0" layoutY="57.0" prefWidth="150.0" />
+      <TextArea layoutX="102.0" layoutY="150.0" prefHeight="21.0" prefWidth="170.0" />
+      <Label layoutX="59.0" layoutY="61.0" text="Cavallo:" />
+      <Label layoutX="63.0" layoutY="160.0" text="Memo:" />
+      <DatePicker layoutX="101.0" layoutY="105.0" />
+      <Label layoutX="72.0" layoutY="109.0" text="Data:" />
+      <Button layoutX="199.0" layoutY="203.0" mnemonicParsing="false" text="Aggiungi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="57.0" layoutY="203.0" mnemonicParsing="false" text="Svuota i campi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="101.0" layoutY="363.0" text="Data:" />
+      <Label layoutX="57.0" layoutY="308.0" text="Inserisci nuovo ordine:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="334.0" text="Descrizione:" />
+      <TextField layoutX="130.0" layoutY="450.0" prefHeight="26.0" prefWidth="143.0" />
+      <Label layoutX="95.0" layoutY="457.0" text="Costo:" />
+      <Label layoutX="101.0" layoutY="413.0" text="Tipo:" />
+      <ChoiceBox layoutX="129.0" layoutY="407.0" prefHeight="26.0" prefWidth="143.0" />
+      <TextArea layoutX="328.0" layoutY="351.0" prefHeight="133.0" prefWidth="181.0" />
+      <Button layoutX="328.0" layoutY="511.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" text="Aggiungi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="202.0" layoutY="511.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" text="Svuota i campi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <DatePicker layoutX="128.0" layoutY="356.0" prefHeight="26.0" prefWidth="143.0" />
+      <Label layoutX="523.0" layoutY="23.0" text="Crea nuovo fornitore:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="67.0" text="Nome e cognome:" />
+      <TextField layoutX="646.0" layoutY="63.0" prefHeight="26.0" prefWidth="179.0" />
+      <Label layoutX="614.0" layoutY="105.0" text="Email:" />
+      <TextField layoutX="646.0" layoutY="100.0" prefHeight="26.0" prefWidth="184.0" />
+      <Label layoutX="595.0" layoutY="141.0" text="Telefono:" />
+      <TextField layoutX="646.0" layoutY="136.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="618.0" layoutY="177.0" text="Tipo:" />
+      <TextField layoutX="646.0" layoutY="172.0" prefHeight="26.0" prefWidth="164.0" />
+      <Button layoutX="598.0" layoutY="226.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" text="Crea">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="694.0" layoutY="226.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="111.0" text="Svuota i campi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="616.0" layoutY="308.0" text="Aggiungi cavallo:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="613.0" layoutY="383.0" text="Data di nascita:" />
+      <Label layoutX="762.0" layoutY="492.0" text="Manto:" />
+      <TextField layoutX="801.0" layoutY="488.0" prefHeight="26.0" prefWidth="85.0" />
+      <Label layoutX="632.0" layoutY="455.0" text="Razza:" />
+      <TextField layoutX="666.0" layoutY="452.0" prefHeight="26.0" prefWidth="86.0" />
+      <Label layoutX="758.0" layoutY="456.0" text="Altezza:" />
+      <TextField layoutX="800.0" layoutY="452.0" prefHeight="26.0" prefWidth="84.0" />
+      <Label layoutX="631.0" layoutY="491.0" text="Sesso:" />
+      <TextField layoutX="665.0" layoutY="488.0" prefHeight="26.0" prefWidth="88.0" />
+      <Label layoutX="658.0" layoutY="345.0" text="Nome:" />
+      <TextField layoutX="695.0" layoutY="341.0" prefHeight="26.0" prefWidth="127.0" />
+      <DatePicker layoutX="695.0" layoutY="378.0" prefHeight="26.0" prefWidth="137.0" />
+      <Label layoutX="629.0" layoutY="420.0" text="Proprietario:" />
+      <TextField layoutX="696.0" layoutY="415.0" prefHeight="26.0" prefWidth="127.0" />
+      <Button layoutX="726.0" layoutY="525.0" minHeight="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Importa">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Label layoutX="694.0" layoutY="529.0" text="Foto:" />
+      <Button layoutX="797.0" layoutY="570.0" mnemonicParsing="false" text="Crea">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="655.0" layoutY="570.0" mnemonicParsing="false" text="Svuota i campi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
